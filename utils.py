@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 letterboxdURL = "https://letterboxd.com/"
+imdbURL = "https://www.imdb.com/"
 
 def getPageFilms(username, urlPath, divClass):
     watchlist = []
@@ -20,6 +21,29 @@ def getPageFilms(username, urlPath, divClass):
         for film in li:
             watchlist.append(film.find('img')['alt'])
         pageNum = pageNum + 1
+
+def getIMDBTopX(numberOfPagesToGet):
+    topXList = []
+    pageNum = 0
+    while True:
+        currentFilms = []
+        print("Scraping IMDB page: " + str(pageNum))
+        endString = ""
+        if (pageNum > 0):
+            endString = "&start=" + str((50* pageNum) + 1)
+        topFilmsList = imdbURL + "search/title/?groups=top_" + str(numberOfPagesToGet * 50) + endString
+        page = requests.get(topFilmsList)
+        soup = BeautifulSoup(page.content, "html.parser")
+        listHTML = soup.find_all("h3", {"class": "lister-item-header"})
+        for film in listHTML:
+            var = film.find("a").decode_contents()
+            currentFilms.append(var)
+        if len(currentFilms) > 0:
+            pageNum += 1
+            topXList = topXList + currentFilms
+        else:
+            break
+    return topXList
 
 def getWatchlist(username):
     return getPageFilms(username, "watchlist", "poster-list -p125 -grid -scaled128")
