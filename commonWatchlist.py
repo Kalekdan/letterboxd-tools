@@ -12,3 +12,5 @@ def getCommonWatchlist(usernames):
     print(watchlistsSet)
 
 getCommonWatchlist(["ayfex","jamesiam","kalekdan"])
+
+print(utils.getIMDBTopX(2))
