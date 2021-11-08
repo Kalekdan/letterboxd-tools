@@ -11,6 +11,4 @@ def getCommonWatchlist(usernames):
         watchlistsSet.intersection_update(s)
     print(watchlistsSet)
 
-getCommonWatchlist(["ayfex","jamesiam","kalekdan"])
-
-print(utils.getIMDBTopX(2))
+getCommonWatchlist(["jamesiam","kalekdan"])
