@@ -10,5 +10,20 @@ def getCommonWatchlist(usernames):
     for s in watchlists[1:]:
         watchlistsSet.intersection_update(s)
     print(watchlistsSet)
+    
+def getCommonWatchedList(usernames):
+    watchedFilms = []
+    for user in usernames:
+        watchedFilms = watchedFilms + utils.getWatchedFilms(user)
+    watchedFilmsSet = set(watchedFilms)
+    return watchedFilmsSet
 
-getCommonWatchlist(["jamesiam","kalekdan"])
+def findUnwatchedClassics(watchedList):
+    # print(watchedList)
+    imdbTop = utils.getIMDBTopX(3)
+    print(list(set(imdbTop)-watchedList))
+            
+
+commonWatchedList = getCommonWatchedList(["jamesiam","kalekdan"])
+findUnwatchedClassics(commonWatchedList)
+

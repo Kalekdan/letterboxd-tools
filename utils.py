@@ -40,7 +40,7 @@ def getIMDBTopX(numberOfPagesToGet):
             currentFilms.append(var)
         if len(currentFilms) > 0:
             pageNum += 1
-            topXList.append(currentFilms)
+            topXList = topXList + currentFilms
         else:
             break
     return topXList
