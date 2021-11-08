@@ -3,11 +3,11 @@ from bs4 import BeautifulSoup
 
 letterboxdURL = "https://letterboxd.com/"
 
-def getPageContent(username, urlPath, divClass):
+def getPageFilms(username, urlPath, divClass):
     watchlist = []
     pageNum = 1
     while True:
-        print("Scraping "+username+" watchlist page: " + str(pageNum))
+        print("Scraping " + username + " " + urlPath + " page: " + str(pageNum))
         watchlistURL = letterboxdURL + username + '/'+ urlPath +'/page/' + str(pageNum)
         page = requests.get(watchlistURL)
         soup = BeautifulSoup(page.content, "html.parser")
@@ -22,8 +22,11 @@ def getPageContent(username, urlPath, divClass):
         pageNum = pageNum + 1
 
 def getWatchlist(username):
-    return getPageContent(username, "watchlist", "poster-list -p125 -grid -scaled128")
+    return getPageFilms(username, "watchlist", "poster-list -p125 -grid -scaled128")
 
 def getWatchedFilms(username):
-    return getPageContent(username, "films", "poster-list -p70 -grid film-list clear")
+    return getPageFilms(username, "films", "poster-list -p70 -grid film-list clear")
+
+def getRatedFilms(username):
+    return getPageFilms(username, "films/ratings", "poster-list -p150 -grid")
 
