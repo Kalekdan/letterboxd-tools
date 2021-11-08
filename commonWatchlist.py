@@ -24,6 +24,6 @@ def findUnwatchedClassics(watchedList):
     print(list(set(imdbTop)-watchedList))
             
 
-commonWatchedList = getCommonWatchedList(["jamesiam","kalekdan"])
+commonWatchedList = getCommonWatchedList(["jamesiam","kalekdan","aliiim","ayfex"])
 findUnwatchedClassics(commonWatchedList)
 
