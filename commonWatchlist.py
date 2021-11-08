@@ -11,4 +11,4 @@ def getCommonWatchlist(usernames):
         watchlistsSet.intersection_update(s)
     print(watchlistsSet)
 
-getCommonWatchlist(["ayfex","jamesiam","kalekdan"])
+getCommonWatchlist(["jamesiam","kalekdan"])
