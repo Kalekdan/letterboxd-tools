@@ -4,7 +4,7 @@ import utils
 def getCommonWatchlist(usernames):
     watchlists = []
     for user in usernames:
-        userWatchlist = utils.getWatchlist(user)
+        userWatchlist = utils.getLetterboxdWatchlist(user)
         watchlists.append(userWatchlist)
     watchlistsSet = set(watchlists[0])
     for s in watchlists[1:]:
@@ -14,7 +14,7 @@ def getCommonWatchlist(usernames):
 def getCommonWatchedList(usernames):
     watchedFilms = []
     for user in usernames:
-        watchedFilms = watchedFilms + utils.getWatchedFilms(user)
+        watchedFilms = watchedFilms + utils.getLetterboxdWatchedFilms(user)
     watchedFilmsSet = set(watchedFilms)
     return watchedFilmsSet
 

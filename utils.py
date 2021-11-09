@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 letterboxdURL = "https://letterboxd.com/"
 imdbURL = "https://www.imdb.com/"
 
-def getPageFilms(username, urlPath, divClass):
+def getLetterboxdPageFilms(username, urlPath, divClass):
     watchlist = []
     pageNum = 1
     while True:
@@ -45,16 +45,16 @@ def getIMDBTopX(numberOfPagesToGet):
             break
     return topXList
 
-def getWatchlist(username):
-    return getPageFilms(username, "watchlist", "poster-list -p125 -grid -scaled128")
+def getLetterboxdWatchlist(username):
+    return getLetterboxdPageFilms(username, "watchlist", "poster-list")
 
-def getWatchedFilms(username):
-    return getPageFilms(username, "films", "poster-list -p70 -grid film-list clear")
+def getLetterboxdWatchedFilms(username):
+    return getLetterboxdPageFilms(username, "films", "poster-list")
 
-def getRatedFilms(username):
-    return getPageFilms(username, "films/ratings", "poster-list -p150 -grid")
+def getLetterboxdRatedFilms(username):
+    return getLetterboxdPageFilms(username, "films/ratings", "poster-list")
 
-def getRatings(username):
+def getLetterboxdRatings(username):
     ratings = {}
     pageNum = 1
     urlPath = "films/ratings"
