@@ -1,10 +1,10 @@
-import utils
+import webScrapeUtils
 
 
 def getCommonWatchlist(usernames):
     watchlists = []
     for user in usernames:
-        userWatchlist = utils.getLetterboxdWatchlist(user)
+        userWatchlist = webScrapeUtils.getLetterboxdWatchlist(user)
         watchlists.append(userWatchlist)
     watchlistsSet = set(watchlists[0])
     for s in watchlists[1:]:
@@ -14,16 +14,16 @@ def getCommonWatchlist(usernames):
 def getCommonWatchedList(usernames):
     watchedFilms = []
     for user in usernames:
-        watchedFilms = watchedFilms + utils.getLetterboxdWatchedFilms(user)
+        watchedFilms = watchedFilms + webScrapeUtils.getLetterboxdWatchedFilms(user)
     watchedFilmsSet = set(watchedFilms)
     return watchedFilmsSet
 
 def findUnwatchedClassics(watchedList):
     # print(watchedList)
-    imdbTop = utils.getIMDBTopX(3)
+    imdbTop = webScrapeUtils.getIMDBTopX(3)
     print(list(set(imdbTop)-watchedList))
             
 
-commonWatchedList = getCommonWatchedList(["jamesiam","kalekdan","aliiim","ayfex"])
-findUnwatchedClassics(commonWatchedList)
+#commonWatchedList = getCommonWatchedList(["jamesiam","kalekdan","aliiim","ayfex"])
+#findUnwatchedClassics(commonWatchedList)
 
