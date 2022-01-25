@@ -28,7 +28,7 @@ def getLetterboxdTopUnwatched(usernames, pagesToSearch=1):
     for user in usernames:
         userWatchlist = webScrapeUtils.getLetterboxdWatchedFilms(user)
         watchlistsSet.update(userWatchlist)
-    topSet = set(utils.getLetterboxdTop(pagesToSearch))
+    topSet = set(webScrapeUtils.getLetterboxdTop(pagesToSearch))
     return topSet - watchlistsSet
 
 #commonWatchedList = getCommonWatchedList(["jamesiam","kalekdan","aliiim","ayfex"])
