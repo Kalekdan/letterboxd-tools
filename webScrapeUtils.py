@@ -1,10 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
+from requests_html import HTMLSession
 
 letterboxdURL = "https://letterboxd.com/"
 imdbURL = "https://www.imdb.com/"
 
-def getLetterboxdPageFilms(username, urlPath, divClass):
+def getLetterboxdPageFilms(username, urlPath, divClass, pages=-1):
     watchlist = []
     pageNum = 1
     while True:
@@ -21,6 +22,27 @@ def getLetterboxdPageFilms(username, urlPath, divClass):
         for film in li:
             watchlist.append(film.find('img')['alt'])
         pageNum = pageNum + 1
+        if pageNum == pages:
+            return watchlist
+
+
+def getLetterboxdJSPageFilms(username, urlPath, divClass, pages=-1):
+    watchlist = []
+    pageNum = 1
+    session = HTMLSession()
+    while True:
+        print("Scraping " + username + " " + urlPath + " page: " + str(pageNum))
+        watchlistURL = letterboxdURL + username + '/'+ urlPath +'/page/' + str(pageNum)
+        page = session.get(watchlistURL)
+        page.html.render()
+        li = page.html.find("li."+ divClass +" img")
+        if len(li) == 0:
+            return watchlist
+        for film in li:
+            watchlist.append(film.attrs['alt'])
+        pageNum = pageNum + 1
+        if pageNum == pages:
+            return watchlist
 
 def getIMDBTopX(numberOfPagesToGet):
     topXList = []
@@ -57,6 +79,8 @@ def getLetterboxdRatedFilms(username):
 def getLetterboxdListFilms(listOwner, listName):
     return getLetterboxdPageFilms(listOwner, "list/"+listName, "poster-list")
 
+def getLetterboxdTop(pages = 50):
+    return getLetterboxdJSPageFilms("", "films/popular", "poster-container", pages)
 
 def getLetterboxdRatings(username):
     ratings = {}
@@ -79,4 +103,3 @@ def getLetterboxdRatings(username):
             rating = int(film.find('span', {"class":"rating"})['class'][1].split('-')[1])
             ratings[name] = rating
         pageNum = pageNum + 1
-

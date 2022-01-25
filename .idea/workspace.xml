@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a0ad3fc-d86a-4129-9ef4-831e5765b223" name="Default Changelist" comment="">
+    <list default="true" id="35a8fd8a-9da9-48c3-9c5a-d59e1e3a21b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/letterboxdTools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/letterboxdTools.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filmListUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/filmListUtils.py" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +35,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/filmGroup.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.filmGroupUtils">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.filmListUtils">
     <configuration name="filmGroupUtils" type="PythonConfigurationType" factoryName="Python">
       <module name="letterboxdTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -39,7 +55,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\joeri\Documents\GitDocuments\letterboxd-tools\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../letterboxdTools\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -60,12 +76,12 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\joeri\Documents\GitDocuments\letterboxd-tools\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../letterboxdTools\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\joeri\Documents\GitDocuments\letterboxd-tools\filmListUtils.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../letterboxdTools\filmListUtils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -81,7 +97,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\joeri\Documents\GitDocuments\letterboxd-tools\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../letterboxdTools\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -102,12 +118,12 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="D:\Users\Joe\Documents\gitProjects\letterboxdTools\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../letterboxdTools\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\joeri\Documents\GitDocuments\letterboxd-tools\webScrapeUtils.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../letterboxdTools\webScrapeUtils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,13 +191,13 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2a0ad3fc-d86a-4129-9ef4-831e5765b223" name="Default Changelist" comment="" />
+      <changelist id="35a8fd8a-9da9-48c3-9c5a-d59e1e3a21b5" name="Default Changelist" comment="" />
       <created>1636364069299</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -194,11 +210,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

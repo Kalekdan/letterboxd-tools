@@ -22,8 +22,19 @@ def findUnwatchedClassics(watchedList):
     # print(watchedList)
     imdbTop = webScrapeUtils.getIMDBTopX(3)
     print(list(set(imdbTop)-watchedList))
-            
+
+def getLetterboxdTopUnwatched(usernames, pagesToSearch=1):
+    watchlistsSet = set()
+    for user in usernames:
+        userWatchlist = webScrapeUtils.getLetterboxdWatchedFilms(user)
+        watchlistsSet.update(userWatchlist)
+    topSet = set(webScrapeUtils.getLetterboxdTop(pagesToSearch))
+    return topSet - watchlistsSet
 
 #commonWatchedList = getCommonWatchedList(["jamesiam","kalekdan","aliiim","ayfex"])
 #findUnwatchedClassics(commonWatchedList)
 
+#commonWatchList = getCommonWatchlist(["baudehlaire","kalekdan","ayfex"])
+#findUnwatchedClassics(commonWatchedList)
+#getLetterboxdTop()
+print(getLetterboxdTopUnwatched(["baudehlaire","kalekdan","ayfex","jamesiam","aliiim"], 25))
