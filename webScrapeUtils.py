@@ -76,6 +76,9 @@ def getLetterboxdWatchedFilms(username):
 def getLetterboxdRatedFilms(username):
     return getLetterboxdPageFilms(username, "films/ratings", "poster-list")
 
+def getLetterboxdListFilms(listOwner, listName):
+    return getLetterboxdPageFilms(listOwner, "list/"+listName, "poster-list")
+
 def getLetterboxdTop(pages = 50):
     return getLetterboxdJSPageFilms("", "films/popular", "poster-container", pages)
 
