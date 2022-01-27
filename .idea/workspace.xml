@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35a8fd8a-9da9-48c3-9c5a-d59e1e3a21b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/letterboxdTools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/letterboxdTools.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filmGroupUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/filmGroupUtils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filmListUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/filmListUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainWindow.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.filmListUtils">
+  <component name="RunManager" selected="Python.mainWindow">
     <configuration name="filmGroupUtils" type="PythonConfigurationType" factoryName="Python">
       <module name="letterboxdTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,6 +146,20 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for unitTests.IMDBScrapingTests.testIMDBFilmCount" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="letterboxdTools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;unitTests.IMDBScrapingTests.testIMDBFilmCount&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for unitTests.LetterboxdScrapingTests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="letterboxdTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -182,10 +196,12 @@
       <item itemvalue="Python tests.Unittests for unitTests.TestLetterboxdScraping" />
       <item itemvalue="Python tests.Unittests for unitTests.LetterboxdScrapingTests" />
       <item itemvalue="Python tests.Unittests for unitTests.IMDBScrapingTests" />
+      <item itemvalue="Python tests.Unittests for unitTests.IMDBScrapingTests.testIMDBFilmCount" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Unittests for unitTests.LetterboxdScrapingTests" />
+        <item itemvalue="Python tests.Unittests for unitTests.IMDBScrapingTests.testIMDBFilmCount" />
         <item itemvalue="Python tests.Unittests for unitTests.IMDBScrapingTests" />
         <item itemvalue="Python tests.Unittests for unitTests.TestLetterboxdScraping" />
       </list>
