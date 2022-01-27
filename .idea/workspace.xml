@@ -4,6 +4,7 @@
     <list default="true" id="35a8fd8a-9da9-48c3-9c5a-d59e1e3a21b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filmGroupUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/filmGroupUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filmListUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/filmListUtils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainWindow.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

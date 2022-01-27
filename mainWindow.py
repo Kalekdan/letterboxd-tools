@@ -6,12 +6,22 @@ import filmGroupUtils
 
 
 def addNewGroupToList(groupList, newGroupName):
-    gl = groupList.append(filmGroupUtils.filmGroup(newGroupName))
+    gl = groupList.append(filmGroupUtils.FilmGroup(newGroupName))
     filmGroupList = gl
 
-mm = filmGroupUtils.filmGroup("Movie Mondays")
-group2 =filmGroupUtils.filmGroup("Family Movie Group")
+movieMondays = filmGroupUtils.FilmGroup("Movie Mondays")
 filmGroupList = []
+
+#["baudehlaire","kalekdan","ayfex","jamesiam","aliiim"]
+joe = filmGroupUtils.FilmGroupMember("Joe","kalekdan")
+james = filmGroupUtils.FilmGroupMember("James","jamesiam")
+ali = filmGroupUtils.FilmGroupMember("Ali","aliiim")
+alicia = filmGroupUtils.FilmGroupMember("Alicia","ayfex")
+sofia = filmGroupUtils.FilmGroupMember("Sofia","baudehlaire")
+
+movieMondays.addMembers([joe, james, ali, alicia, sofia])
+movieMondays.updateMembersLetterboxd()
+filmGroupUtils.saveFilmGroups([movieMondays])
 
 root = tkinter.Tk()
 frm = ttk.Frame(root, padding=10)
