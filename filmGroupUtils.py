@@ -7,18 +7,57 @@ class FilmGroupMember:
         self.name = name
         self.letterboxdUsername = letterboxdUsername
         self.letterboxdWatchList = []
+        self.letterboxdWatchedFilms = []
+        self.letterboxdRatedFilms = []
+        self.letterboxdRatings = {}
 
     def retrieveLetterboxdWatchList(self):
         if self.letterboxdUsername != None:
             return webScrapeUtils.getLetterboxdWatchlist(self.letterboxdUsername)
         return
 
+    def retrieveLetterboxdWatchedFilms(self):
+        if self.letterboxdUsername != None:
+            return webScrapeUtils.getLetterboxdWatchedFilms(self.letterboxdUsername)
+        return
+
+    def retrieveLetterboxdRatedFilms(self):
+        if self.letterboxdUsername != None:
+            return webScrapeUtils.getLetterboxdRatedFilms(self.letterboxdUsername)
+        return
+
+    def retrieveLetterboxdRatings(self):
+        if self.letterboxdUsername != None:
+            return webScrapeUtils.getLetterboxdRatings(self.letterboxdUsername)
+        return
+
     def updateLetterboxdWatchList(self):
         self.letterboxdWatchList = self.retrieveLetterboxdWatchList()
         return
 
+    def updateLetterboxdWatchedFilms(self):
+        self.letterboxdWatchedFilms = self.retrieveLetterboxdWatchedFilms()
+        return
+
+    def updateLetterboxdRatedFilms(self):
+        self.letterboxdRatedFilms = self.retrieveLetterboxdRatedFilms()
+        return
+
+    def updateLetterboxdRatings(self):
+        self.letterboxdRatings = self.retrieveLetterboxdRatings()
+        return
+
     def getLetterboxdWatchList(self):
         return self.letterboxdWatchList
+
+    def getLetterboxdWatchedFilms(self):
+        return self.letterboxdWatchedFilms
+
+    def getLetterboxdRatedFilms(self):
+        return self.letterboxdRatedFilms
+
+    def getLetterboxdRatings(self):
+        return self.letterboxdRatings
 
 
 class FilmGroup:
@@ -49,7 +88,9 @@ class FilmGroup:
     def updateMembersLetterboxd(self):
         for member in self.getMembers():
             member.updateLetterboxdWatchList()
-            # TODO add other letterboxd functions once implemented
+            member.updateLetterboxdWatchedFilms()
+            member.updateLetterboxdRatedFilms()
+            member.updateLetterboxdRatings()
 
     def __str__(self):
         return self.groupName
@@ -75,13 +116,27 @@ def writeMemberDetailsFile(root, member):
     return
 
 def writeMemberLetterboxdFiles(root, member):
+    # Create dir
     letterboxdPath = root + "/letterboxd"
     isExist = os.path.exists(letterboxdPath)
     if not isExist:
         os.mkdir(letterboxdPath)
-    watchlist = member.getLetterboxdWatchList()
+    # Write watchlist
+    filmList = member.getLetterboxdWatchList()
     f = open(letterboxdPath + "/watchlist.txt", "w")
-    for film in watchlist:
+    for film in filmList:
+        f.write(film + "\n")
+    f.close()
+    # Write watched films
+    filmList = member.getLetterboxdWatchedFilms()
+    f = open(letterboxdPath + "/watchedFilms.txt", "w")
+    for film in filmList:
+        f.write(film + "\n")
+    f.close()
+    # Write rated films
+    filmList = member.getLetterboxdRatedFilms()
+    f = open(letterboxdPath + "/ratedFilms.txt", "w")
+    for film in filmList:
         f.write(film + "\n")
     f.close()
     return
