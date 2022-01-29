@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="35a8fd8a-9da9-48c3-9c5a-d59e1e3a21b5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/Ali/Ali.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Ali/Ali.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/Alicia/Alicia.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Alicia/Alicia.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/James/James.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/James/James.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/Joe/Joe.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Joe/Joe.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/Sofia/Sofia.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Sofia/Sofia.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filmGroupUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/filmGroupUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainWindow.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -231,16 +237,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/filmGroupUtils.py</url>
-          <line>119</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

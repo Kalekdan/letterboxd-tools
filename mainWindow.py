@@ -20,8 +20,9 @@ alicia = filmGroupUtils.FilmGroupMember("Alicia","ayfex")
 sofia = filmGroupUtils.FilmGroupMember("Sofia","baudehlaire")
 
 movieMondays.addMembers([joe, james, ali, alicia, sofia])
-movieMondays.updateMembersLetterboxd()
-filmGroupUtils.saveFilmGroups([movieMondays])
+# movieMondays.updateMembersLetterboxd()
+#movieMondays.saveFilmGroup()
+filmGroupUtils.loadFilmGroup("Movie Mondays")
 
 root = tkinter.Tk()
 frm = ttk.Frame(root, padding=10)
