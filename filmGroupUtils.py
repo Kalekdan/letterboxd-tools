@@ -165,5 +165,10 @@ def writeMemberLetterboxdFiles(root, member):
     for film in filmList:
         f.write(film + "\n")
     f.close()
-    # TODO add saving ratings to file
+    # Write ratings
+    filmList = member.getLetterboxdRatings()
+    f = open(letterboxdPath + "/ratings.txt", "w")
+    for film in filmList:
+        f.write(film + "=" + str(filmList[film]) + "\n")
+    f.close()
     return

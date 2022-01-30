@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35a8fd8a-9da9-48c3-9c5a-d59e1e3a21b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Movie Mondays/Ali/letterboxd/ratings.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Movie Mondays/Alicia/letterboxd/ratings.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Movie Mondays/Ali/Ali.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Ali/Ali.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Movie Mondays/Alicia/Alicia.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Alicia/Alicia.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Movie Mondays/James/James.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/James/James.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Movie Mondays/Joe/Joe.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Joe/Joe.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Movie Mondays/Sofia/Sofia.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Sofia/Sofia.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/Ali/letterboxd/ratedFilms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Ali/letterboxd/ratedFilms.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/Ali/letterboxd/watchedFilms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Ali/letterboxd/watchedFilms.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/Alicia/letterboxd/ratedFilms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Alicia/letterboxd/ratedFilms.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/Alicia/letterboxd/watchedFilms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Alicia/letterboxd/watchedFilms.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/Alicia/letterboxd/watchlist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Alicia/letterboxd/watchlist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/James/letterboxd/ratedFilms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/James/letterboxd/ratedFilms.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/James/letterboxd/watchedFilms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/James/letterboxd/watchedFilms.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/James/letterboxd/watchlist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/James/letterboxd/watchlist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/Joe/letterboxd/ratedFilms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Joe/letterboxd/ratedFilms.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/Joe/letterboxd/watchedFilms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Joe/letterboxd/watchedFilms.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/Joe/letterboxd/watchlist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Joe/letterboxd/watchlist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/Sofia/letterboxd/ratedFilms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Sofia/letterboxd/ratedFilms.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/Sofia/letterboxd/watchedFilms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Sofia/letterboxd/watchedFilms.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie Mondays/Sofia/letterboxd/watchlist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Movie Mondays/Sofia/letterboxd/watchlist.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filmGroupUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/filmGroupUtils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainWindow.py" afterDir="false" />
     </list>
